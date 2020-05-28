@@ -1,0 +1,28 @@
+{
+  "name": "bdd",
+  "version": "1.0.0",
+  "description": "",
+  "main": "index.js",
+  "scripts": {
+    "test:acceptance": "cypress run",
+    "test:acceptance:interactive": "cypress open",
+    "start": "webpack-dev-server"
+  },
+  "keywords": [],
+  "author": "",
+  "license": "ISC",
+  "devDependencies": {
+    "@babel/core": "^7.10.1",
+    "@cypress/webpack-preprocessor": "^5.4.1",
+    "@testing-library/cypress": "^6.0.0",
+    "babel-loader": "^8.1.0",
+    "cypress": "^4.7.0",
+    "cypress-cucumber-preprocessor": "^2.3.1",
+    "webpack": "^4.43.0",
+    "webpack-cli": "^3.3.11",
+    "webpack-dev-server": "^3.11.0"
+  },
+  "cypress-cucumber-preprocessor": {
+    "nonGlobalStepDefinitions": true
+  }
+}
